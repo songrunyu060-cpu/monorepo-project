@@ -1,0 +1,23 @@
+# node
+node_modules
+.pnpm
+dist
+build
+coverage
+
+# python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.env
+venv
+.venv
+
+# 小程序
+miniprogram_npm
+
+# IDE
+.vscode/
+.idea/
+.DS_Store

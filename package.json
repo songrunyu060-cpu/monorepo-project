@@ -1,0 +1,28 @@
+{
+  "name": "monorepo-project",
+  "version": "0.0.1",
+  "description": "一个monorepo项目",
+  "scripts": {
+    "web:dev": "pnpm -F web-pc dev",
+    "web:build": "pnpm -F web-pc build",
+    "mp:dev": "pnpm -F miniprogram dev",
+    "api:dev": "cd apps/api-server && python -m uvicorn main:app --reload",
+    "api:install": "cd apps/api-server && pip install -r requirements.txt",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  },
+  "keywords": [
+    "monorepo",
+    "fastapi"
+  ],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.30.3",
+  "devDependencies": {
+    "turbo": "^2.11.7"
+  }
+}

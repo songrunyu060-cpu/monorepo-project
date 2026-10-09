@@ -1,0 +1,5 @@
+packages:
+  # 业务应用
+  - "apps/*"
+  # 公共共享包
+  - "packages/*"
