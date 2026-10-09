@@ -42,10 +42,20 @@
 - 根 package.json scripts 追加turbo命令
 
 
-
 ### 6. git初始化
     ```bash
     git init
     git add .
     git commit -m "init monorepo project"
     ```
+
+### 7. 配置全局的 tsconfig.json 文件，oxlint.json 文件prettier配置文件等
+
+- tsconfig.json
+- oxlint.json
+- .prettierrc
+- .prettierignore
+- 如果有多个python项目 ruff.toml
+- 如果是团队协作 `extensions.json` 团队推荐插件 `.vscode/settings.json`（工作区统一编辑器行为，所有人打开项目自动生效）
+- `.github/workflows/ci.yml`（CI，可选）
+- `.env.example` 全局环境变量模板
