@@ -18,6 +18,5 @@ venv
 miniprogram_npm
 
 # IDE
-.vscode/
 .idea/
 .DS_Store

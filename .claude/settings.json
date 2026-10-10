@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./node_modules/.bin/oxlint -c .oxlintrc.json apps/videoManagement)",
+      "Bash(echo \"preview exit=$?\")",
+      "Bash(echo \"local config gone \\(grep exit=$?\\)\")",
+      "Bash(pnpm install *)",
+      "Bash(pnpm exec *)",
+      "Bash(pnpm lint *)",
+      "Bash(echo \"root exit=$?\")",
+      "Bash(pnpm run *)",
+      "Bash(echo \"mgmt exit=$?\")",
+      "Bash(pnpm -F videogame build)",
+      "Bash(pnpm -F videomanagement build)",
+      "Bash(pnpm typecheck *)",
+      "Bash(echo \"exit=$?\")",
+      "Bash(pnpm oxlint *)",
+      "Bash(pnpm tsc *)",
+      "Bash(pnpm prettier *)",
+      "Bash(pnpm format:check)",
+      "Bash(printf 'const unused = 1\\\\n')",
+      "Bash(rm -f /tmp/ox-probe.ts)",
+      "Bash(echo \"真实退出码=$?\")",
+      "Read(//tmp/**)",
+      "Bash(rm -f /tmp/tc.log)"
+    ],
+    "additionalDirectories": [
+      "/Users/songrunyu/Desktop/code/monorepo-project/apps/videoManagement"
+    ]
+  }
+}

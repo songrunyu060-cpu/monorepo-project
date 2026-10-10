@@ -1,0 +1,28 @@
+{
+  "$schema": "https://oxc.rs/schema/oxlintrc.json",
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "plugins": ["react", "typescript"],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      { "argsIgnorePattern": "^_" }
+    ],
+    "@typescript-eslint/no-explicit-any": "error",
+    "react/react-in-jsx-scope": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/only-export-components": ["warn", { "allowConstantExport": true }]
+  },
+  "ignorePatterns": [
+    "node_modules",
+    ".venv",
+    "apps/videoBackend",
+    "**/dist",
+    ".turbo",
+    ".git"
+  ]
+}

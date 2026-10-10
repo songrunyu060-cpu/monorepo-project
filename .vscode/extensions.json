@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "oxc.oxc-vscode",
+        "esbenp.prettier-vscode",
+        "vscode.typescript-language-features",
+        "anthropic.claude-code",
+        "ms-python.python",
+        "charliermarsh.ruff"
+    ]
+}

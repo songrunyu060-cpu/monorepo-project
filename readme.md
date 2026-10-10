@@ -52,7 +52,7 @@
 ### 7. 配置全局的 tsconfig.json 文件，oxlint.json 文件prettier配置文件等
 
 - tsconfig.json
-- oxlint.json
+- oxlint.json disableFormattingRules: true 关闭所有格式校验，只做代码质量检查
 - .prettierrc
 - .prettierignore
 - 如果有多个python项目 ruff.toml

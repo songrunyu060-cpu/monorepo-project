@@ -1,0 +1,13 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "oxc.enable": true,
+  "oxc.run": "onType",
+  "files.exclude": {
+    "**/venv": true,
+    "**/.venv": true
+  },
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  }
+}

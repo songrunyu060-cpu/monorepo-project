@@ -1,28 +1,41 @@
 {
-  "name": "monorepo-project",
-  "version": "0.0.1",
-  "description": "一个monorepo项目",
-  "scripts": {
-    "web:dev": "pnpm -F web-pc dev",
-    "web:build": "pnpm -F web-pc build",
-    "mp:dev": "pnpm -F miniprogram dev",
-    "api:dev": "cd apps/api-server && python -m uvicorn main:app --reload",
-    "api:install": "cd apps/api-server && pip install -r requirements.txt",
-    "lint": "pnpm -r lint",
-    "typecheck": "pnpm -r typecheck"
-  },
-  "engines": {
-    "node": ">=20",
-    "pnpm": ">=9"
-  },
-  "keywords": [
-    "monorepo",
-    "fastapi"
-  ],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.30.3",
-  "devDependencies": {
-    "turbo": "^2.11.7"
-  }
+    "name": "monorepo-project",
+    "version": "0.0.1",
+    "description": "一个monorepo项目",
+    "scripts": {
+        "game:dev": "pnpm -F videoGame dev",
+        "game:build": "pnpm -F videoGame build",
+        "mgmt:dev": "pnpm -F videoManagement dev",
+        "mgmt:build": "pnpm -F videoManagement build",
+        "api:dev": "cd apps/videoBackend && python -m uvicorn main:app --reload",
+        "api:install": "cd apps/videoBackend && pip install -r requirements.txt",
+        "api:fetch-openapi": "curl http://127.0.0.1:8000/openapi.json -o packages/shared-types/openapi.json",
+        "api:gen-types": "openapi-typescript packages/shared-types/openapi.json -o packages/shared-types/src/api.ts",
+        "lint": "oxlint .",
+        "lint:fix": "oxlint . --fix",
+        "typecheck": "tsc --build",
+        "format": "prettier . --write",
+        "format:check": "prettier . --check",
+        "dev": "turbo dev",
+        "build": "turbo build"
+    },
+    "engines": {
+        "node": ">=20",
+        "pnpm": ">=9"
+    },
+    "keywords": [
+        "monorepo",
+        "fastapi"
+    ],
+    "author": "",
+    "license": "ISC",
+    "packageManager": "pnpm@10.30.3",
+    "devDependencies": {
+        "@monorepo/tsconfig": "workspace:*",
+        "openapi-typescript": "^7.13.0",
+        "oxlint": "^1.87.0",
+        "prettier": "^3.9.9",
+        "turbo": "^2.11.7",
+        "typescript": "~6.0.2"
+    }
 }
