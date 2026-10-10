@@ -20,7 +20,7 @@
   "ignorePatterns": [
     "node_modules",
     ".venv",
-    "apps/videoBackend",
+    "apps/video-backend",
     "**/dist",
     ".turbo",
     ".git"

@@ -4,7 +4,7 @@ dist
 build
 .venv
 venv
-apps/videoBackend
+apps/video-backend
 .turbo
 .git
 .DS_Store

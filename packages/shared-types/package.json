@@ -1,0 +1,16 @@
+{
+  "name": "@monorepo/shared-types",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts"
+  },
+  "scripts": {
+    "gen:modules": "node scripts/gen-modules.mjs"
+  },
+  "devDependencies": {
+    "@monorepo/tsconfig": "workspace:*"
+  }
+}

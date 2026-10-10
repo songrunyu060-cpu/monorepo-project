@@ -1,13 +1,21 @@
 {
+  "python.defaultInterpreterPath": "${workspaceFolder}/apps/video-backend/.venv/bin/python",
+  "python.analysis.autoImportCompletions": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "oxc.enable": true,
   "oxc.run": "onType",
-  "files.exclude": {
-    "**/venv": true,
-    "**/.venv": true
-  },
+
   "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff"
-  }
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true
+  },
+  "python-envs.defaultEnvManager": "ms-python.python:venv",
+  "python-envs.defaultPackageManager": "ms-python.python:pip",
+  "python-envs.pythonProjects": [
+    {
+      "path": "apps/video-backend",
+      "envManager": "ms-python.python:venv"
+    }
+  ]
 }

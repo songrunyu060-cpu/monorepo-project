@@ -27,7 +27,7 @@ importers:
         specifier: ~6.0.2
         version: 6.0.3
 
-  apps/videoGame:
+  apps/video-game:
     dependencies:
       react:
         specifier: ^19.2.8
@@ -70,7 +70,7 @@ importers:
         specifier: ^8.3.0
         version: 8.3.4(@types/node@24.19.2)
 
-  apps/videoManagement:
+  apps/video-management:
     dependencies:
       react:
         specifier: ^19.2.8
@@ -112,6 +112,12 @@ importers:
       vite:
         specifier: ^8.3.0
         version: 8.3.4(@types/node@24.19.2)
+
+  packages/shared-types:
+    devDependencies:
+      '@monorepo/tsconfig':
+        specifier: workspace:*
+        version: link:../tsconfig
 
   packages/tsconfig: {}
 
